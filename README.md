@@ -2,37 +2,46 @@ Proyecto Data Science
 
 Primera Entrega: Avance del Proyecto Final
 
-Este documento describe los requisitos para la primera entrega del proyecto final de Data 
-Science. El objetivo es establecer un marco inicial para el análisis de datos a través de un 
-enfoque estructurado.
+Abstract del Proyecto
 
-Consignas:
+El presente proyecto tiene como objetivo realizar un análisis exploratorio de datos financieros a partir de un dataset que contiene información sobre operaciones de compra y venta de activos, incluyendo variables como las fechas de compra y venta, los precios asociados a cada transacción, el retorno nominal y el retorno esperado anualizado, junto con la clasificación de cada operación dentro de un sector específico.
 
-1. Abstract del Proyecto
-Se debe redactar un abstract con una extensión de 250 a 500 palabras. Este resumen debe 
-presentar el dataset seleccionado, justificar la elección y describir los objetivos principales del 
-análisis a realizar.
+La elección de este dataset se fundamenta en la relevancia que tienen los análisis cuantitativos en el ámbito de las finanzas y las inversiones. Comprender la evolución de retornos, la dispersión de resultados entre sectores y la estabilidad de cada componente permite identificar patrones de riesgo y oportunidad que resultan fundamentales para la toma de decisiones estratégicas en la gestión de carteras. Además, este conjunto de datos ofrece la posibilidad de aplicar técnicas de limpieza, transformación y visualización de datos, lo que refuerza el valor pedagógico del proyecto como ejercicio práctico en ciencia de datos.
 
-3. Preguntas e Hipótesis
-Formular un conjunto de preguntas de investigación o hipótesis que serán el eje de tu análisis. 
-Estas deben ser específicas y relevantes para el dataset, sirviendo como guía para las 
-visualizaciones y conclusiones.
+El análisis propuesto tiene como objetivos centrales:
 
-5. Análisis de Datos y Visualización
-• Identificación de Valores Perdidos: Realizar un diagnóstico para identificar la 
-presencia de valores perdidos en el dataset.
-• Visualizaciones Multivariadas: Crear al menos un gráfico que involucre tres o más 
-variables. Cada visualización debe ir acompañada de un análisis descriptivo y su 
-interpretación.
-• Análisis Numérico: Acompañar las visualizaciones con resúmenes numéricos (ej. 
-media, mediana, desviación estándar) que sustenten tus hallazgos.
-6. Conclusiones Preliminares
-Conectar los hallazgos obtenidos a través de los gráficos y resúmenes numéricos con las 
-preguntas e hipótesis planteadas inicialmente. Se deben presentar interpretaciones claras y 
-fundamentadas de los resultados.
+Procesar y limpiar el dataset, transformando columnas de tipo texto en formatos adecuados para el análisis (fechas y variables numéricas).
 
-Requisitos de Entrega
-• Formato: Archivo .ipynb.
-• Nomenclatura: ProyectoDSParteI+Apellido.ipynb.
-• Sugerencia: Se recomienda trabajar con subconjuntos del dataset original para 
-optimizar la prueba del código
+Explorar la distribución de los retornos mediante estadísticas descriptivas y visualizaciones como boxplots, que permiten comparar la estabilidad y el comportamiento de los distintos sectores.
+
+Identificar correlaciones entre variables financieras, evaluando si existen sectores con un comportamiento más homogéneo o más riesgoso en relación a su retorno esperado.
+
+Detectar valores atípicos (outliers) que puedan tener un impacto desproporcionado en las conclusiones y que ameriten un análisis detallado.
+
+De esta manera, el estudio busca no solo describir el comportamiento de los datos disponibles, sino también generar insights útiles para la toma de decisiones financieras. El valor agregado de este trabajo radica en combinar herramientas de análisis numérico con técnicas de visualización multivariada, para obtener una visión más clara sobre la relación entre los retornos y los sectores en los que operan los activos.
+
+En conclusión, este proyecto pretende establecer un puente entre la teoría financiera y el análisis práctico de datos, brindando una base sólida para la formulación de hipótesis, la evaluación de riesgos y la identificación de oportunidades de inversión.
+
+Preguntas e Hipótesis
+
+Preguntas de investigación:
+
+¿Qué sectores presentan mayor estabilidad en términos de retornos anuales esperados?
+
+¿Existe algún sector que muestre consistentemente retornos medianos más elevados que los demás?
+
+¿Cuáles son los sectores con mayor dispersión en sus retornos, lo que podría interpretarse como mayor riesgo?
+
+¿Se identifican sectores con valores extremos (outliers) que convenga investigar en profundidad?
+
+¿Hay correlaciones significativas entre el precio de compra/venta y los retornos anuales esperados?
+
+Hipótesis iniciales:
+
+H1: Sectores con mayor estabilidad muestran una menor dispersión en los boxplots de retornos.
+
+H2: Sectores de alta rentabilidad medianamente esperada también presentan mayor riesgo (volatilidad).
+
+H3: Los valores extremos pueden estar asociados a errores de registro o a operaciones financieras extraordinarias.
+
+H4: Existe una correlación positiva entre los precios de los activos y el retorno esperado anualizado.
